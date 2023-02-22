@@ -1,0 +1,87 @@
+        /*ARQUIVO GERAL */
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            h1, h2, p {
+                font-family: Arial, Helvetica;
+            }
+
+            header {
+                background-color: #FFE8E5;
+                padding: 30px;
+                text-align: center;
+                font-size: 35px;
+                color: rosebrown;
+                font-family:Spectral
+            }
+            
+            nav {
+                float: left;
+                width: 20%;
+                height: 405px;
+                background: #FFD3CD;
+                padding: 20px;
+            }
+
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+            article {
+                float: left;
+                padding: 20px;
+                width: 80%;
+                background-color: #FFF3F1;
+                height: auto;
+            }
+
+            form div {
+                margin:10px;
+            }
+
+            section::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            footer {
+                background-color: #FFD3CD;
+                padding: 10px;
+                text-align: center;
+                color: white;
+                font-size: 10px;
+            }
+
+            /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+            @media (max-width: 600px) {
+                nav, article {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            /*top(cima)
+            bottom/inferior (baixo)
+            left(esquerda)
+            right (direita)
+            */
+
+            form div{
+                position: static;
+                position: relative;
+                margin-top: -10px;
+            }
+
+            label {
+                positon: absolute;
+                top: 0;
+            }
+
+            /* positionamento relativo não interage com outros elementos
+            absoluto vai afetar

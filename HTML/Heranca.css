@@ -1,0 +1,76 @@
+/* 
+Herança 
+
+1. Sobreposiçåo / Sobrescreve 
+2. Aplica a último estilo definido 
+3. Prioriza estilos específicos (com seletores mais proximos)
+
+*/
+
+html { 
+	font-family: sans-serif;
+	color: #333333;
+}
+
+p {
+	color: #454545;
+
+}
+
+
+
+header {
+	color: white;
+	font-size: 1.5 rem;
+}
+
+/* 
+combinadores
+
+(espaço) seletor descendent 
+(>) combinador de seletores filhos - diretamente
+(+) combinador de elementos irmaos adjacentes / que vem na sequencia -
+	vai aplicar para todos da pagina / imediatamente apos
+(~) vai aplicar para todos que vem depois, nao precisando ser imediatamente apos
+*/
+
+
+header h2 {
+	font-weight: 100;
+}
+
+header > h2 .{
+	font-weight: 600;
+
+}
+
+h2 + p {
+	text-transform: uppercase; /* caixa alta */
+}
+
+/* pseudo-elemetos :
+
+
+ */
+
+a {
+	text-decoration: none; /* sem underline, padrao mais utilizado */
+	color: #555555;
+	font-size: 1.5rem;
+}
+
+a:hover {
+	color: #009;
+	text-decoration: underline;
+}
+
+a:visited {
+	background: 00f;
+}
+
+a:active
+
+
+/* reset 
+	Serve apara que em todos os negadores a pagina vai ser a mesma
+	*/ 

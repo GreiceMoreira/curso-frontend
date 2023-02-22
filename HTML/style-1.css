@@ -1,0 +1,124 @@
+        /*ARQUIVO GERAL */
+            * {
+                box-sizing: border-box;
+            }
+            html {
+                font-size: 62,5%; /* equivalente à 10px*/
+            }
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            h1, p {
+                font-family: Arial, Helvetica;
+            }
+
+            a {
+                color: #871B24;
+            }
+
+
+            header {
+                background-color: #BB2649;
+                padding: 30px;
+                text-align: center;
+                font-size: 30px;
+                color: whitesmoke;
+                font-family:Spectral
+            }
+            
+            nav {
+                float: left;
+                width: 20%;
+                height: 405px;
+                background: #FFD3CD;
+                padding: 20px;
+            }
+
+            nav ul {
+                list-style-type: none;
+                padding: 1rem;
+            }
+            ul li {
+                margin-bottom: 0.1rem;
+                font-size: 1rem;
+                font-family: sans-serif;
+                color: #BB2649;
+                padding: 0.5rem;
+                border-bottom: 0.1rem solid #FFF3F1;
+
+            }
+
+
+            article {
+                float: left;
+                padding: 2rem;
+                width: 80%;
+                background-color: #FFF3F1;
+                height: auto;
+                color: #3B1D24;
+            }
+
+            form div {
+                background: #fff;
+                border: 0.1rem solid #BB2649;
+                margin: 2rem;
+                padding: 1rem;
+
+            }
+
+            label {
+                margin-bottom: 0.1rem;
+                font-size: 1.4rem;
+                font-family: sans-serif;
+                color: #BB2649;
+                padding: 0.5rem 0.5rem 0.5rem 0rem;
+            } 
+
+            [type="text"], [type="email"], textarea, label {
+                display: block;
+                width: 100%;
+
+            }
+
+            section::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            footer {
+                background-color: #FFD3CD;
+                padding: 10px;
+                text-align: center;
+                color: white;
+                font-size: 10px;
+            }
+
+            /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+            @media (max-width: 600px) {
+                nav, article {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            /*top(cima)
+            bottom/inferior (baixo)
+            left(esquerda)
+            right (direita)
+            */
+
+            form div{
+                position: static;
+                position: relative;
+                margin-top: -10px;
+            }
+
+            label {
+                positon: absolute;
+                top: 0;
+            }
+
+            /* positionamento relativo não interage com outros elementos
+            absoluto vai afetar*/

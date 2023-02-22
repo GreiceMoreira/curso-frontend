@@ -1,0 +1,24 @@
+*{  } 
+body {}
+html{
+font-family: ;
+background-color: ;
+padding: ;
+margin: ;
+font-size: 62.5% /* equivalente a 10px*/;
+}
+h1,h1,p{}
+a{
+	text-decoration: ="none";
+}
+#primeiro-link {identificasdor id}
+.navegacao {
+	class - reutilizavel 
+}
+[type="text" ]
+
+unidades absolutas
+px e pt - pontos 
+unidades relativas
+porcentagem, em - relativa ao elemento pai ,rem - root em - na tegue da pagina
+
