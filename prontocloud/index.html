@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../HTML/CSS/reset.css">
+    <link rel="stylesheet" href="../html-css/css/reset.css">
     <link rel="stylesheet" href="./css/styles.css">
 
-    <!-- Icones -->
-    <link rel="shortcut icon" href="./images/favicon.cc">
+    <!-- icones -->
+    <link rel="shortcut icon" href="./images/favicon.cc"> <!-- 17x17 pixels -->
     <link rel="apple-touch-icon" href="./images/icon-touch-retina.png">
     <link rel="apple-touch-icon" href="./images/icon-touch-retina-iphone.png">
     <link rel="apple-touch-icon" href="./images/icon-touch-retina-ipad.png">
@@ -19,28 +19,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-   
-    <title>Prontocloud</title>
+
+    <title>ProntoCloud</title>
 </head>
 <body>
-    <div class="main-container">
-    <header>
-        <div class="container">
-        <img src="./images/prontocloud.png">
-        </div> 
-    </header>
-     
-    <section>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre nós</a></li>
-                <li><a href="#">Tenho interesse</a></li>
 
-            </ul>
-        </nav>
-        <article>
+    <div class="main-container">
+        <header>
             <div class="container">
+                <img src="./images/prontocloud.png" alt="ProntoCloud">
+            </div>
+        </header>
+        <section>
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Sobre nós</a></li>
+                        <li><a href="#tenho-interesse">Tenho interesse</a></li>
+                    </ul>
+                </nav>
+                <article>
+                    <div class="container">
                         <h1>Planejamento para criação de sites</h1>
 
                         <img src="./images/web-design-planning-700x300.jpg" alt="Planejamento para criação de sites">
@@ -88,18 +88,31 @@
                         </ol>
 
                         <p>Se quiser pode compartilhar seu resultado com a gente. No próximo post vamos continuar com o nosso guia de criação de sites , falando sobre os aspectos técnicos do desenvolvimento do seu site.</p>
-            </div>        
-        </article>
+                    </div>
+                </article>
+               
+            </div>
+        </section>  
+        <section id="tenho-interesse">
+            <div class="container">
+                <article>
+                    <h1>Ficou interessado?</h1>
+                    <p>Então preencha os campos abaixo para receber mais informações sobre nossos produtos e serviços</p>
 
-    </section>
-   
-    <footer>
-        <div class="container">
-        <p>&copy; ProntoCloud. Todos os direitos reservados.
-        <small>Desenvolvido por: Greice Moreira</small></p>
-        </div>
-    </footer>
+                    <div class="cognito">
+                        <script src="https://www.cognitoforms.com/s/pnEzo69DJ02ilLkJFaThlw"></script>
+                        <script>Cognito.load("forms", { id: "1" });</script>
+                    </div>
 
+                </article>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <p>&copy; ProntoCloud. Todos os direitos reservados.
+            <small>Desenvolvido por: Marcelo Cavalcante</small></p>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
