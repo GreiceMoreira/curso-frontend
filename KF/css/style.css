@@ -10,15 +10,15 @@ body {
 
 .main-container {
     display: block;
-    width: 100vw;
+    width: 100%;
     margin: 0 auto;
+    overflow: hidden;
 }
 
-.container {
-    display: block;
+.container {  
     float: left;
-    padding: 20px;
-    max-width: 100%;
+    padding: 20px 0px;
+    width: 98%;
     margin: 0 auto;
     max-width: 1198px;
 }
@@ -29,12 +29,14 @@ header {
     float: left;
     width: 100%;
     border-bottom: 1px solid #005151;
+    padding: 20px 0px;
 }
 
 h1 {
     font-size: 2.4rem;
     color: #005151;
     margin-bottom: 20px;
+    margin-left: 24px;
 }
 
 h2 {
@@ -61,6 +63,7 @@ p {
     margin-bottom: 10px;
     line-height: 1.4;
     color: #333;
+    margin-left: 16px;
 }
 
 a {
@@ -104,7 +107,7 @@ section {
     display: block;
     float: left;
     font-size: 1.5rem; /* equivalente a 15px */ 
-    padding: 20px;
+    padding: 5px 0px;
     width: 100%;
 }
 
@@ -143,7 +146,7 @@ footer {
     background-color: #005151;  
     display: block;
     float: left;
-    padding: 20px;
+    padding: 20px 0px;
     width: 100%;
 }
 
@@ -172,4 +175,75 @@ footer small {
         padding-left: 1%;
         padding-right: 1%;
     }
+}
+
+#banner {
+    background-image: url('../images/Frame\ 19.png');
+    background-repeat: repeat;
+    background-position: center;
+    width: 100%;
+
+}
+
+.legenda-container {
+    width: 30vw;
+    float: right;
+    margin: 10vh 10vh 0 0;
+}
+
+.legenda {
+    background-color: rgba(255, 255, 255, .9);
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 3rem;
+  
+}
+.legenda h5,
+.legenda h4 {
+    font-size: 1.8rem;
+    color:#005151
+}
+
+.button-cta {
+    display: inline;
+    background-color: #FAE6E0;
+    color:#005151;
+    font-size: 2rem;
+    box-shadow: 2px 2px 4px #f8d1c5;
+    padding: 10px 15px;
+    width: auto;
+    text-decoration: none;
+    font-weight: 300;
+    border-radius: 15px;
+    float: right;
+
+}
+
+#saiba-mais {
+    background-color: #f8d1c5;
+    display: grid;
+
+
+}
+
+#saiba-mais p,
+#saiba-mais img {
+    width: 45%;
+    display: block;
+    float:left;
+    padding: 20px;
+    font-size: 30px;
+}
+dt {
+    margin: 200px o;
+}
+
+dt{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    margin-left: 20px;
+}
+dd{
+    margin-left: 40px;
+    margin-bottom: 20px;
 }
