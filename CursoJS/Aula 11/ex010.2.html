@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Conhecendo você</h1>
+    Em qual país você nasceu?
+    <input type="text" name="txtpays" id="txtpays">
+    <input type="button" value="Resultado" onclick="status()">
+    <div id="res">
+    
+    </div>
+    <script>
+        function status(){
+            var país = window.document.querySelector('input#txtpays')
+            var res = window.document.querySelector('div#res')
+            res.innerHTML = `Funciona`
+            if (país == 'Brasil') {
+                res.innertHTML += `<p>Você é Brasileiro!</p> `
+            }else {
+                res.innertHTML += `<p>Você é estrangeiro</p>`
+            }
+        }
+
+    </script>
+</body>
+</html>

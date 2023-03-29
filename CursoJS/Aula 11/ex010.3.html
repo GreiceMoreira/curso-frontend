@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+</head>
+
+<body>
+
+    <h1>Conhecendo você</h1>
+    Pais em que você nasceu <input type="text" name="txtpays" id="txtpays">
+    <input type="button" value="Verificar" onclick="saber()">
+    <div id="res"></div>
+    <script>
+        function saber() {
+            var txtp = window.document.getElementById('txtpays')
+            var res = window.document.querySelector('div#res')
+            res.innerHTML = `Bem-vindo! `
+            if (txtp == 'Brasil'){
+                res.innerHTML += `<p> Você está <strong>MULTADO</strong> por excesso de velocidade`
+            }
+            res.innerHTML += `<p> Dirija sempre com cinto de segurança!</p>`
+        }
+    </script>
+
+
+
+</body>
+
+</html>
