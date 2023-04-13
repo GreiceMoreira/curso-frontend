@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./imagem/Yarn.svg"> 
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/custom.css">
+
+    <title>Kelly Franceschetti</title>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img src="./imagem/Frame 20.png" alt="Logo Kelly Franceschetti">
+                </div>
+                <div class="col">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item"><a class="nav-link active" href="">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#produtos">Aulas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contatos">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <section id="sobre">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-sm-12">
+                    <h2>Sobre mim</h2>
+                    <p>Há 19 anos venho ensinando pessoas de todas as idades a realizarem seus projetos artesanais com crochê e tricô.</p>
+                    <p>Hoje, muitas alunas usam essa arte como fonte de renda outras como lazer e arte-terapia.</p>
+                    <a class="btn btn-lg btn-success">Botão</a>
+                </div>
+                <div class="col-md-5 col-sm-12">
+                    <img src="./imagem/Kelly.JPG" alt="Imagem Exemplo" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="produtos">
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+
+                    <h2>Aulas</h2>
+
+                    <div class="card">
+                        <img src="./imagem/Crochet.br.JPG" alt="Imagem Exemplo" class="img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Aulas em grupo presenciais</h5>
+                            <p class="card-text">Estamos em diversas lojas de aviamentos para te receber!</p>
+                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1" >ver mais</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./imagem/Crochet.br.JPG" alt="Imagem Exemplo" class="img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Aulas em grupo online</h5>
+                            <p class="card-text">A tecnologia à nosso favor. Participe do nosso grupo mesmo estando no sofá da sua casa.</p>
+                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-2" >ver mais</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./imagem/Crochet.br.JPG" alt="Imagem Exemplo" class="img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Aulas particulares</h5>
+                            <p class="card-text">Quer avançar no seu projeto de forma mais rápida? Esta precisando daquela atenção especial para seu trabalho?</p>
+                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-3" >ver mais</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="contato">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <h2>Contato</h2>
+                    <p>Ficou interessado? Preencha os campos do formulário para receber uma cotação.</p>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <form class="form">
+
+                        <div class="input-group">
+                            <input class="form-control" type="text" name="nome" placeholder="digite seu nome">
+                        </div>
+
+                        <div class="input-group">
+                            <input class="form-control" type="text" name="email" placeholder="digite seu email">
+                        </div>
+
+                        <div class="input-group">
+                            <textarea  class="form-control" name="" rows="5"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-lg btn-success">Solicitar informação</button>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="modal fade" id="modal-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Aula presencial</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Confira os locais</h6>
+                    <table class="table table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th>Local</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Casa Hermosa Novelaria</td>
+                                <td>R$ 100</td>
+                            </tr>
+                            <tr>
+                                <td>Loja do forte</td>
+                                <td>R$ 80</td>
+                            </tr>
+                            <tr>
+                                <td>Loja da Assis</td>
+                                <td>R$ 100 em material e ganhe a aula</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal fade" id="modal-2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Aula online</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Confira os horários</h6>
+                    <table class="table table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th>Horário</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Segunda - 14h00/17h00</td>
+                                <td>R$ 50</td>
+                            </tr>
+                            <tr>
+                                <td>Quinta - 14h00/17h00</td>
+                                <td>R$ 80</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="modal fade" id="modal-3">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Aulas particulares</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Entre em contato</h6>
+                    <table class="table table-hover table-striped">
+                        <tbody>
+                            <p>Para agendar sua aula particular, você precisa entrar em contato comigo e verificar a agenda. </p>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; Kelly Franceschetti. Todos os direitos reservados.
+                <small>Desenvolvido por: Greice Moreira</small>
+            </p>
+        </div>
+    </footer>
+
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
