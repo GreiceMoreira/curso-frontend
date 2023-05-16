@@ -1,0 +1,51 @@
+.featured-page {
+    margin-top: 130px;
+    margin-bottom: 40px;
+
+    .section-heading {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    #filters {
+        margin-top: 15px;
+        text-align: right;
+    }
+}
+
+.featured {
+
+    .featured-item {
+        margin-bottom: 30px;
+        text-decoration: none;
+
+        h4 {
+            transition: all 0.5s;
+
+            &hover {
+                color: $color-01;
+            }
+        }
+    }
+}
+
+#filter {
+
+    button {
+        outline: none;
+    }
+
+    .btn-primary.focus,
+    .btn-primary:focus {
+        color: $color-01 !important;
+        box-shadow: none !important;
+    }
+
+    .btn-primary {
+        color: #1e1e1e;
+        border: none;
+        font-size: 15px;
+        font-weight: 700;
+        background-color: transparent;
+    }
+}
