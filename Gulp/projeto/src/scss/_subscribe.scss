@@ -1,0 +1,68 @@
+@import 'vars';
+.subscribe-form {
+    background-color: $color-01;
+    padding: 80px 0px;
+    text-align: center;
+
+    .section-heading .line-dec {
+        background-color: $bg-color;
+        margin: 0 auto;
+    }
+
+    .main-content {
+
+        p {
+            font-size: 17px;
+            color: $bg-color;
+            margin-bottom: 30px;
+        }
+
+        form {
+            color: $bg-color;
+            display: inline;
+
+            input {
+                display: inline;
+                width: 100%;
+                height: 46px;
+                border: 1px solid $bg-color;
+                background-color: transparent;
+                padding-left: 15px;
+                color: $bg-color;
+                outline: none;
+            }
+
+            button {
+                width: 100%;
+                height: 45px;
+                cursor: pointer;
+                background-color: $bg-color;
+                outline: none;
+                border-radius: 5px;
+                padding: 10px 15px;
+                display: inline-block;
+                color: $color-01;
+                font-size: 14px;
+                text-transform: uppercase;
+                font-weight: 300;
+                letter-spacing: 0.4px;
+                text-decoration: none;
+                transition: all 0.5s;
+                box-shadow: none;
+                border: none;
+
+                &focus {
+                    color: $bg-color !important;
+                }
+            }
+        }
+    }
+}
+
+.section-heading {
+    margin-top: 0px;
+
+    h1 {
+        color: $bg-color;
+    }
+}

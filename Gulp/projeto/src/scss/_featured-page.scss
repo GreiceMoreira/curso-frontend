@@ -1,3 +1,4 @@
+@import 'vars';
 .featured-page {
     margin-top: 130px;
     margin-bottom: 40px;
@@ -22,7 +23,7 @@
         h4 {
             transition: all 0.5s;
 
-            &hover {
+            &:hover {
                 color: $color-01;
             }
         }

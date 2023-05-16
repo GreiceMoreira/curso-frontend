@@ -11,6 +11,7 @@ const htmlmin = require('gulp-htmlmin')
 const babel = require('gulp-babel')
 const browserSync = require('browser-sync').create()
 const reload = browserSync.reload
+const sass = require('gulp-sass')(require('node-sass'))
 
 function tarefasCSS(cb) {
 
@@ -19,12 +20,21 @@ function tarefasCSS(cb) {
         './node_modules/@fortawesome/fontawesome-free/css/fontawesome.css',
         './vendor/owl/css/owl.css',
         './vendor/jquery-ui/jquery-ui.css',
-        './src/css/style.css'
     ])
-        .pipe(concat('styles.css'))
+        .pipe(concat('libs.css'))
         .pipe(cssmin())
         .pipe(rename({ suffix: '.min'})) // libs.min.css
         .pipe(gulp.dest('./dist/css'))
+
+}
+
+function tarefasSASS(cb) {
+
+    gulp.src('./src/scss/**/*.scss')
+    .pipe(sass()) //Transforma o sass para css
+    .pipe(gulp.dest('./dist/css'))
+
+    cb()
 
 }
 
@@ -84,10 +94,11 @@ gulp.task('serve', function(){
 })
 
 // series x parallel
-const process = series( tarefasHTML, tarefasJS, tarefasCSS)
+const process = series( tarefasHTML, tarefasJS, tarefasCSS, tarefasSASS)
 
 exports.styles = tarefasCSS
 exports.scripts = tarefasJS
 exports.images = tarefasImagem
+exports.sass = tarefasSASS
 
 exports.default = process
