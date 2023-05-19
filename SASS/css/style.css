@@ -14,10 +14,16 @@ p {
 }
 
 header,
-section,
-footer {
+section {
   display: block;
   margin: 0 auto;
+  width: 100%;
+  padding: 4rem 0;
+}
+
+footer {
+  display: block;
+  margin: 24px auto;
   width: 100%;
   padding: 4rem 0;
 }
@@ -74,10 +80,10 @@ footer {
 .blocks {
   padding: 3rem 0;
 }
-.blocks h2 {
+.blocks__title {
   color: #005151;
 }
-.blocks ul {
+.blocks__list {
   list-style-type: none;
   font-size: 1.2rem;
   display: flex;
@@ -86,37 +92,73 @@ footer {
   padding: 1rem 0;
   width: 100%;
 }
-.blocks li {
+.blocks__item {
   color: #FAE6E0;
   display: block;
-  margin: 1.5rem auto;
+  margin: 1.5rem 0.75rem;
   width: 30%;
+  text-align: center;
 }
-.blocks li .img-container {
+@media (max-width: 999px) {
+  .blocks__item {
+    width: calc(99% - 30px);
+  }
+}
+.blocks__img-container {
   display: block;
   height: 200px;
   overflow: hidden;
   width: 100%;
 }
-.blocks li a {
+@media (max-width: 999px) {
+  .blocks__img-container {
+    height: 20rem;
+  }
+}
+.blocks__description {
+  color: #444;
+  font-size: 2rem;
+  padding: 1.5rem;
+}
+.blocks__description--destack {
+  color: #FAE6E0;
+}
+.blocks__button {
   background-color: #005151;
   border-radius: 5px;
   color: white;
-  display: block;
+  display: inline-block;
   font-size: 2.2rem;
   margin: 3rem auto 1.5rem;
-  padding: 4px 8px;
+  padding: 0.5rem 3rem;
   text-align: center;
   text-decoration: none;
 }
 
-.cars h2 {
+.crochet__title {
   color: #005151;
 }
-.cars li {
+.crochet__item {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 1px rgba(68, 68, 68, 0.25);
+  color: #FAE6E0;
+  display: flex;
+  float: left;
+  height: max-content;
+  justify-content: center;
+  align-items: baseline;
+  flex-flow: column;
+}
+.crochet__item--destack {
+  background-color: #222;
+  border: 1px solid #005151;
+  box-shadow: 0 0 1px rgba(68, 68, 68, 0.25);
+}
+.crochet__list {
   color: #222;
 }
-.cars li a {
+.crochet__button {
   background-color: #005151;
 }
 
@@ -124,24 +166,24 @@ footer {
   background-color: #FAE6E0;
   padding: 1.5rem;
 }
-.destack h1 {
+.destack__title {
   color: #005151;
   float: left;
   font-size: 3rem;
   margin-top: 0;
 }
-.destack h2 {
+.destack__subtitle {
   float: left;
   font-size: 1.2rem;
   margin-left: 1.5rem;
   margin-top: 1.5rem;
 }
-.destack img {
+.destack__image {
   width: 100%;
   height: auto;
   margin: 1.5rem auto;
 }
-.destack p {
+.destack__description {
   font-size: 2rem;
   color: #005151;
   padding: 2rem 0;

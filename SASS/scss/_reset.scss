@@ -14,13 +14,20 @@ p {
 }
 
 header,
-section,
-footer {
+section {
     display: block;
     margin: 0 auto;
     width: 100%;
     padding: 4rem 0;
 }
+
+footer {
+    display: block;
+    margin: 24px auto;
+    width: 100%;
+    padding: 4rem 0;
+}
+
 
 section {
     padding: 0;

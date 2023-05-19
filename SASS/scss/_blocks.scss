@@ -19,8 +19,13 @@
     &__item {
         color: $color-02;
         display: block;
-        margin: $space-default auto;
+        margin: $space-default .75rem;        
         width: 30%;
+        text-align: center;
+
+        @media (max-width: $tablet) {
+            width: calc(99% - 30px);
+        }
     }
 
     &__img-container {
@@ -28,16 +33,29 @@
         height: 200px;
         overflow: hidden;
         width: 100%;
+        @media (max-width: $tablet) {
+            height: 20rem;
+        }
+    }
+
+    &__description {
+        color: $color-default;
+        font-size: $font-normal;
+        padding: $space-default;
+
+        &--destack {
+            color: $color-02;
+        }
     }
 
     &__button {
         background-color: $color-01;
         border-radius: 5px;
         color: white;
-        display: block;
+        display: inline-block;
         font-size: $font-medium;
         margin: $mt-02 auto $mb;
-        padding: 4px 8px;
+        padding: .5rem 3rem;
         text-align: center;
         text-decoration: none;
     }
