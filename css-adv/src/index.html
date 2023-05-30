@@ -1,108 +1,115 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Framework Simulator</title>
+    <link rel="shortcut icon" href="./assets/images/Yarn.svg" type="image/yarn-icon">
+    <title>Lance Negócios</title>
 </head>
-
 <body>
     <div id="root">
         <header>
             <div class="container">
-                <h2>Logo</h2>
-                <nav>
-                    <a href="#sobre">Sobre</a>
-                    <a href="#produtos">Produtos</a>
-                    <a href="#contato">Contato</a>
+                <h2 class="logo">
+                    <img src="./assets/images/logo-novo.png" alt="Kelly Franceschetti">
+                </h2>
+                <nav class="nav">
+                    <a class="nav__item" href="#sobre">Sobre</a>
+                    <a class="nav__item" href="#produtos">Produtos</a>
+                    <a class="nav__item" href="#como-funciona">Como funciona</a>
                 </nav>
+                <div class="hero">
+                    <h1>Apreda crochê e tricô do zero</h1>
+                </div>
             </div>
         </header>
         <section id="sobre">
             <div class="container">
-                <aside>
-                    <div id="localizacao"></div>
-                </aside>
                 <article>
-                    <h1>Sobre nós</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus accusantium repellendus
-                        aperiam culpa, hic ad nobis autem architecto sapiente praesentium sint nihil temporibus dolorum
-                        labore asperiores maiores rem nemo quas.</p>
-                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae molestias dignissimos amet ad
-                        porro eveniet a praesentium esse officiis doloremque, neque, minus nisi? Sequi, explicabo
-                        necessitatibus? Debitis sint fugiat officia.</P>
+                    <h1>Sobre mim</h1>
+                    <p>Professora de crochê e tricô há mais de 17 anos, formada em pedagogia e apaixonada por história da arte.</p>
+                    <p>Se você procura uma fonte de renda extra ou busca trabalhos manuais que auxiliam no desenvolvimento pessoal, entre em contato para agendarmos sua primeira aula.</p>
                 </article>
-
-
             </div>
-
-
         </section>
         <section id="produtos">
             <div class="container">
-                <div class="vitrine">
-                    <div class="vitrine__item">
-                        <h3 class="vitrine__produto">Produto 1</h3>
-                        <div class="vitrine__image"></div>
-                        <p class="vitrine__desc"></p>
-                        <a href="" class="vitrine__button">Ver detalhes</a>
+                <article>
+                    <h1>Catálogo</h1>
+                    <div class="vitrine">
+                        <div class="vitrine__item">
+                            <div class="vitrine__image">
+                                <img src="./assets/images/logo-aula-presencial.png" alt="Aula presencial">
+                            </div>
+                            <h3 class="vitrine__title">Aula presencial</h3>
+                            <p class="vitrine__desc">Para você que ama interaçã em groupo</p>
+                            <a href="#produto-logo" class="vitrine__button">Tenho interresse</a>
+                        </div>
+                        <div class="vitrine__item">
+                            <div class="vitrine__image">
+                                <img src="./assets/images/logo-online.png" alt="Aula online">
+                            </div>
+                            <h3 class="vitrine__title">Aula On-line</h3>
+                            <p class="vitrine__desc">Faça aula onde quiser, é só se conectar.</p>
+                            <a href="#produto-timbrado" class="vitrine__button">Tenho interesse</a>
+                        </div>
+                        <div class="vitrine__item">
+                            <div class="vitrine__image">
+                                <img src="./assets/images/logo-crochet.png" alt="crochê">
+                            </div>
+                            <h3 class="vitrine__title">Meu crochê</h3>
+                            <p class="vitrine__desc">
+                                Em busca de um crochê personalizado para você?   
+                            </p>
+                            <a href="#produto-cartao" class="vitrine__button">Tenho interesse</a>
+                        </div>
+                        <div class="vitrine__item">
+                            <div class="vitrine__image">
+                                <img src="./assets/images/logo-trico.png" alt="Trico">
+                            </div>
+                            <h3 class="vitrine__title">Meu tricô</h3>
+                            <p class="vitrine__desc">
+                                Buscando um tricô para chamar de seu?
+                            </p>
+                            <a href="#produto-site" class="vitrine__button">Tenho interesse</a>
+                        </div>
                     </div>
-                    <div class="vitrine__item">
-                        <h3 class="vitrine__produto">Produto 2</h3>
-                        <div class="vitrine__image"></div>
-                        <p class="vitrine__desc"></p>
-                        <a href="" class="vitrine__button">Ver detalhes</a>
-                    </div>
-                    <div class="vitrine__item">
-                        <h3 class="vitrine__produto">Produto 3</h3>
-                        <div class="vitrine__image"></div>
-                        <p class="vitrine__desc"></p>
-                        <a href="" class="vitrine__button">Ver detalhes</a>
-                    </div>
-                    <div class="vitrine__item">
-                        <h3 class="vitrine__produto">Produto 4</h3>
-                        <div class="vitrine__image"></div>
-                        <p class="vitrine__desc"></p>
-                        <a href="" class="vitrine__button">Ver detalhes</a>
-                    </div>
-                    <div class="vitrine__item">
-                        <h3 class="vitrine__produto">Produto 5</h3>
-                        <div class="vitrine__image"></div>
-                        <p class="vitrine__desc"></p>
-                        <a href="" class="vitrine__button">Ver detalhes</a>
-                    </div>
-                    <div class="vitrine__item">
-                        <h3 class="vitrine__produto">Produto 6</h3>
-                        <div class="vitrine__image"></div>
-                        <p class="vitrine__desc"></p>
-                        <a href="" class="vitrine__button">Ver detalhes</a>
-                    </div>
-
-                </div>
-
+                </article>
             </div>
-
         </section>
-        <section id="contato">
+
+        <section id="como-funciona">
             <div class="container">
-                <h1>Contato</h1>
-                <form class="contato">
-                    <input type="text" placeholder="Nome" class="contato__input">
-                    <input type="text" placeholder="Email" class="contato__input">
-                    <button class="contato__button">Enviar</button>
-                </form>
+                <article>
+                    <h1>Como funciona</h1>
+                    <div class="steps">
+                        <div class="steps__item">
+                            <img src="./assets/images/logo-peca.png" alt="Escolha sua peça">
+                            <h3>Escolha a peça que gostaria de tecer.</h3>
+                        </div>
+                        <div class="steps__item">
+                            <img src="./assets/images/logo-material.png" alt="Compra material">
+                            <h3>Entre entre em contato para que possamos indicar o material necessário.</h3>
+                        </div>
+                        <div class="steps__item">
+                            <img src="./assets/images/logo-coins.png" alt="Pagamento">
+                            <h3>Faça o pagamento.</h3>
+                        </div>
+                        <div class="steps__item">
+                            <img src="./assets/images/logo-tea.png" alt="Aula">
+                            <h3>Venha para aula.</h3>
+                        </div>
+                    </div>
+                </article>
             </div>
         </section>
         <footer>
             <div class="container">
-                <p>&copy; Kelly Franceschetti. Todos os direitos reservados.
-                    <small>Desenvolvido por: Greice Moreira</small>
-                </p>
+                <p>&copy; Todos os direitos reservados. <br>
+                <small>Desenvolvido por <a href="https://github.com/GreiceMoreira">Greice Moreira</a>.</small></p>
             </div>
         </footer>
     </div>
 </body>
-
 </html>
