@@ -1,8 +1,7 @@
-$color-primary: #005151;
-$color-secondary: #FAE6E0;
+$color-primary: #195484;
+$color-secondary: #f58220;
 $font-color-primary: #ffffff;
 $font-color-secondary: #454545;
-$font-color-tertiary: #FCA78E;
 $font-default: Arial, Helvetica, sans-serif;
 $font-size-default: 1.6rem;
 $font-size-nav: 1.8rem;
@@ -19,7 +18,7 @@ $font-size-nav: 1.8rem;
 
 * {
     box-sizing: border-box; 
-    
+    // considera o padding e border como parte do cálculo total da largura e altura
 }
 
 html {
@@ -31,6 +30,7 @@ body {
     background-color: $color-primary;
     font-family: $font-default;
     margin: 0;
+    font-size: 1.4rem;
 }
 
 h1 {
@@ -42,7 +42,7 @@ h1 {
 article {
 
     h1 {
-        color: $font-color-tertiary;
+        color: $color-secondary;
         font-size: 3rem;
         text-align: left;
     }
@@ -71,17 +71,27 @@ section {
     padding: 4rem 0;
     margin: 0;
 }
+
 img {
     max-width: 100%;
     height: auto;
 }
 
+// SASS
 .container {
     display: flex;
     flex-flow: column;
     margin: 0 auto;
     max-width: 90vw;
+
+    @media (max-width: 768px){
+        max-width: 99%;
+    }
+
+    @media (min-width: 1024px ){
+    }
 }
+
 
 @import 'animations';
 @import 'header';

@@ -10,6 +10,7 @@
         font-size: $font-size-nav;
         text-decoration: none;
         position: relative;
+        padding: 1rem;
         &:hover {
             color: $color-secondary;
             animation: toTop;

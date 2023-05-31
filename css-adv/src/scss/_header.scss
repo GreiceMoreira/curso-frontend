@@ -22,6 +22,21 @@ header .container {
             font-size: 10rem;
             box-shadow: 0 0 2px 2px rgba(25 , 25 , 25 , .2)
         }
+        @media (max-width: 767px) {
+
+            img {
+                margin-left: -50%;
+                position: relative;
+                width: 230%;
+                max-width: none;
+                margin-right: -68%;
+                margin-top: 90px;
+            }
+
+            h1 {
+                font-size: 7rem;
+            }
+        }
     }
 
 }
