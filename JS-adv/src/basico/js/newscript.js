@@ -4,65 +4,7 @@ como?
 somar os numeros
 dividir pela quantidade de numeros 
 
-Classe aluno 
-objeto aprovado  usar uma regex para testar ?????
-objeto reprovado
-
-const n01
-const n02
-
-class Aluno {
-    
-    constructor(notas) { 
-        if (notas != null) {
-            this.notas = notas
-        }
-    }
-
-    addNota(novaNota) {
-        if (this.notas == null) {
-            this.notas = []
-        }
-        this.notas.push(novaNota)
-    }
-
-    calculaSoma(notas) {
-        if (this.notas == null) {
-            return 0
-        }
-        let soma = 0;
-        for( notas = 0; notas < notas.length; notas++) {
-            soma += notas[c];
-        }
-        return soma
-    }
-    calculaMedia() {
-
-        return soma / notas.length
-    }
-
-    estaAprovado() {
-        return this.calculalMedia() >= 8
-    }
-
-    condicao() {
-        return this.estaAprovado() ? "aprovado" : "reprovado"
-    }
-
-    toString() {
-        return 'Média: ' + this.calculaMedia() + ' - Resultado: ' + this.condicao();
-    }
-
-}
-
-let greice = new Aluno([5, 9])
-let jeffrei = new Aluno()
-jeffrei.addNota(7)
-jeffrei.addNota(5)
-jeffrei.addNota(9)
-
-console.log(greice.toString())
-console.log(jeffrei.toString())
+Classe aluno
 
 */
 
@@ -117,5 +59,3 @@ turma01.forEach(aluno => somaMedias += aluno.calculaMedia())
 let mediaTurma = somaMedias / turma01.length
 
 console.log('A média da turma foi: ' + mediaTurma)
-
-// console.log('A média do aluno é ' + a01.calculaMedia())
