@@ -1,0 +1,132 @@
+$color-primary: #005151;
+$color-secondary: #FAE6E0;
+$font-color-primary: #ffffff;
+$font-color-secondary: #454545;
+$font-color-tertiary: #FCA78E;
+$font-default: Arial, Helvetica, sans-serif;
+$font-size-default: 1.6rem;
+$font-size-nav: 1.8rem;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-default;
+    margin: 0;
+    background-color: #FAE6E0;
+}
+
+h1 {
+    color: $font-color-secondary;
+    text-align: center;
+    width: 100%;
+}
+
+h2 {
+    color: $color-primary;
+    text-align: center;
+    width: 100%;
+    border: 1px solid #005151;
+
+}
+
+h3 {
+    color: $font-color-secondary;
+    text-align: center;
+}
+
+#imagens {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 100%;
+        margin: 0 auto;
+        
+        img {
+            height: 200px;
+            width: auto;
+            margin: 23px;
+            object-fit: fill;
+            object-position: bottom;
+            box-shadow: 10px 10px 5px 0px rgba(252, 167, 142,0.55);
+
+
+            &:hover {
+                opacity: 75%;
+                border-color: $font-color-tertiary;
+            }
+        }
+
+    }
+
+}
+header {
+    background-color: #ffffff;
+    width: 100vw;
+    position: relative;
+    height: 50vh;
+    overflow: hidden;
+
+    h1 , h3 {
+        margin-top: 4rem;
+        position: relative;
+        z-index: 9;
+    }
+}
+
+.waves {
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 110%;
+
+    .wave-01 {
+        animation: wave1 2s ease-in-out infinite alternate;
+        
+    }
+
+    .wave-02 {
+        animation: wave2 2s ease-in-out infinite alternate;
+    }
+
+    .wave-03 {
+        animation: dash1 12s cubic-bezier(0, 1.23, 1, 0.11) infinite alternate;
+        stroke-dasharray: 150;
+        stroke: #fff;
+        stroke-width: 2px;
+    }
+}
+
+@keyframes wave1 {
+    from {
+        transform: translateX(-50px);
+    }
+}
+
+@keyframes wave2 {
+    from {
+        transform: translateX(-100px);
+    }
+}
+
+@keyframes wave3 {
+    from {
+        transform: translateX(-20px);
+    }
+}
+
+@keyframes dash1 {
+    from {
+       stroke-dashoffset: 2000;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@import 'player';
