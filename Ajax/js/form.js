@@ -31,17 +31,18 @@ function updateAdress(data) {
         bairro.value=(data.bairro);
         cidade.value=(data.localidade);
         uf.value=(data.uf);
-        mensagem.innerHTML = '';
+        
     } else {
-        mensagem.innerHTML = `CEP não encontrado`;
+    addError(`CEP não encontrado`);
     }
 }
 
 form.addEventListener('submit', function(event){
     event.preventDefault();
 
+    mensagem.innerHTML = '';
     let msg = [];
-    let markup = '';
+    
    
     Array.from(notNull).forEach(field => {
         let fieldState = isEmpty(field);
@@ -62,11 +63,16 @@ form.addEventListener('submit', function(event){
     }
 
     msg.forEach(item => {
-        markup += `<p>${item}</p>` 
+        addError(item) 
     });
-
-    mensagem.innerHTML = markup;
+ 
+    //mensagem.innerHTML = markup;
 
     // if(msg.length == 0)  form.submit();
 
 });
+
+function addError(msg) {
+    let markup = `<p>${msg}</p>`
+    mensagem.innerHTML += markup
+}
