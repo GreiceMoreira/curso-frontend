@@ -1,0 +1,203 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 35pt;
+}
+
+.txt-banner p {
+    font-size: 14pt;
+}
+
+.container {
+    width: 990px;
+    margin: 0 auto;
+}
+
+.menu {
+    padding-left: 105px;
+    padding-right: 21px;
+    background: url('../Assets/images/background-header.gif') center top repeat !important;
+    width: auto;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu ul li {
+    margin: auto calc(34px / 2);
+    padding-top: 74px;
+    padding-bottom: 41px;
+
+}
+
+.menu ul li a {
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #dc002d;
+    text-decoration: none;
+}
+
+
+.txt-banner {
+    background-color: #dc002d;
+    width: 394px;
+    height: 312px;
+}
+
+.txt-banner h1,
+.txt-banner p {
+    margin-left: 31px;
+    width: 292px;
+    margin-right: 64px;
+}
+
+.txt-banner h1 {
+    margin-top: 50px;
+}
+
+.img-banner {
+    width: 528px;
+    height: 312px;
+
+
+}
+
+#banner {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 312px;
+
+}
+
+#content {
+    display: flex;
+    flex-direction: row;
+    width: 890px;
+    padding: 38px 25px 52px 25px ;
+}
+
+#content p {
+
+font-size: 14pt;
+line-height: 20,3pt;
+padding-top: 18px;
+padding-bottom: 20px;
+padding-right: 30px;
+}
+
+h2 {
+    font-size: 22pt;
+    line-height: 27,6pt;
+}
+
+#content a {
+    margin-top: 24px;
+}
+
+.col img {
+    margin-top: 18px;
+}
+
+.btn-saiba-mais {
+    border: 1px solid #dcdcdc;
+    color: #dc002d;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13pt;
+    line-height: 15.6pt;
+    padding: 5px;
+    text-decoration: none;
+    
+}
+
+.btn-saiba-mais:hover {
+    color: #333333;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    
+    background: url('../Assets/images/background-footer.gif') center top repeat !important; ;
+}
+
+.logo-footer {
+    padding: 1rem;
+    margin-left: 25px;
+    margin-bottom: 31px;
+    width: 71px ;
+}
+
+.contact {
+    width: 280px; 
+    margin-left: 28px;
+    margin-right: 36px; 
+}
+
+.email {
+    color: #dc002d;
+}
+ .localizacao {
+    width: 266px;
+ }
+
+.fale-conosco {
+    display: block;
+    float: right;
+}
+
+.fale-conosco p {
+    float: right;
+}
+
+footer h3 {
+    color: #dc002d;
+    float: right;
+}
+
+footer p {
+    font-size: 8pt;
+
+}
+
+#banner .bi-chevron-left,
+.bi-chevron-right
+
+ {
+    background-color: #960021;
+    font-size: 24px;
+    padding: 7px;
+    border-radius: 5px;
+    color: #ffffff;
+    
+}
+
+#banner .bi-circle-fill {
+    color: #960021;
+    font-size: 12x;
+    box-shadow: #333333;
+}
+
+#banner .first {
+    color: #422d32;
+}

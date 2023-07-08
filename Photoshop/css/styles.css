@@ -1,0 +1,99 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-stretch: condensed;
+  display: block;
+  float: left;
+}
+
+body {
+  max-width: 990px;
+}
+
+header {
+ 
+  padding: auto;
+  display: inline;
+  float: left;
+  width: auto;
+  margin: 1px 0px 1px 1px;
+  
+}
+ .navbar {
+  background: url('../Assets/images/background-header.gif') center top repeat !important;
+  height: 130px;
+  margin-top: 1px;
+  width: 729px;
+ }
+
+.main-container {
+  display: block;
+  width: 100vw;
+  margin: 0 auto;
+}
+
+.container {
+  display: block;
+  float: left;
+  max-width: 100%;
+  margin: 0 auto;
+  max-width: 990px;
+}
+
+
+
+#banner {
+  display: flex;
+  float: left;
+  width: 100%;
+  height: 312px;
+
+}
+
+.img-banner {
+  width: 512px;
+  height: 312px;
+  
+
+}
+
+.txt-banner h1 , .txt-banner p {
+  margin-left: 31px;
+  width: 292px;
+  margin-right: 64px;
+}
+
+h1 {
+  font-size: 36pt;
+  line-height: 39,6 pt;
+  color : #ffffff;
+  
+}
+
+p {
+  font-size: 15pt;
+  line-height: 21pt;
+
+}
+
+.txt-banner {
+  background-color: #dc002d;
+  width: 678px;
+  height: 312px;
+}
+
+
+footer {
+  display: block;
+  background-color: #ebebeb ;
+}
+
+.logo-footer {
+  padding: 1rem;
+  margin-left: 25px;
+  margin-bottom: 31px;
+}
