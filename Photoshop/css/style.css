@@ -198,14 +198,21 @@ h2 {
 footer {
     display: flex;
     flex-direction: row;
+    align-content: center;
     width: auto;
     background: url('../Assets/images/background-footer.gif') center top repeat !important;
     ;
 }
 
+
 .col-footer {
-    margin-left: 200px;
+    display: inline-flex;
+    align-items: center;
+    float: left;
+    width: auto;
 }
+
+
 
 .logo-footer {
     padding: 1rem;
@@ -224,27 +231,50 @@ footer {
     color: #dc002d;
 }
 
-/* .localizacao {
-    width: 266px;
+#logo-footer {
+   margin-left: 10px;
+    margin-top: 26px;
+    margin-right: 30px;
+    
 }
 
-.fale-conosco {
-    display: block;
-    float: right;
+#localizacao {
+    margin-right: 35px;
+    margin-left: 50px;
+    margin-top: 30px;
 }
 
-.fale-conosco p {
-    float: right;
-} 
-*/
+#mapa {
+    margin-right: 35px;
+}
+
+#fale-conosco {
+   display: block;
+   margin-right: 90px;
+    margin-left: 30px;
+   margin-top: 56px;
+}
+
+
+
 
 footer h3 {
     color: #dc002d;
-    float: right;
+    float: right !important;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: -3px;
 }
 
 footer p {
-    font-size: 8pt;
+    font-size: 12pt;
+    margin-top: 9px;
 
+}
+
+#container-footer {
+    display: flex;
+    flex-direction: row;
+    width: auto;
 }
 
