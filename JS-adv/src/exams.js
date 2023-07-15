@@ -1,38 +1,25 @@
-import months from './months.js'
+import works from './works.js'
 
 // Filtra meses
-const filteredMonths = months.filter( (months)=> {
-    return months.days === 31
+const filteredWorks = works.filter((works) => {
+    return works.tecnica === 'Crochet'
 })
 
-console.log(filteredMonths)
+console.log(filteredWorks)
 
 let toPrint = ''
 
 // Lista meses
-filteredMonths.forEach(month => {
-   toPrint += month.month + ', '
+filteredWorks.forEach(works => {
+    toPrint += works.nomeReceita + ', '
 });
 
-// for( let c = 0; c < filteredMonths.length; c++ ){
-
-// }
-
-let meses = [30,30,30] // array comum
-
 // Reduce - função com todos os itens do array e devolve um valor único
-let sumMonthDays = filteredMonths.reduce( (prev, next) => {
-    return {days: prev.days + next.days}
+let sumWorksHoras = filteredWorks.reduce((prev, next) => {
+    return { horas: prev.horas + next.horas }
 })
 
-// Map - funções em arrays de retorno individual (cada valor array)
-let cachorros = [10, 15, 7, 8, 9]
 
-let years = cachorros.map( (cachorro => {
-    return cachorro * 7
-}))
-
-document.getElementById('main').innerHTML = 
-    toPrint + '<br> Soma dos dias dos meses selecionados: ' 
-    + sumMonthDays.days + '<br> idade humana dos cachorros: '  
-    + years + ' '
+document.getElementById('main').innerHTML =
+    toPrint + '<br> Soma de horas dos trabalhos selecionados: '
+    + sumWorksHoras.horas
