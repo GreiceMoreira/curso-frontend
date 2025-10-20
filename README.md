@@ -1,63 +1,18 @@
-# Curso Front-end
-#### EBAC
+# Web Development Studies  
 
-# GIT
-## Conceitos de versionamento
- - Histórico
- - Controle de versão
- - Quem alterou
- - O quê alterou
- - Quando alterou
- - Todos os arquivos
- - Evolução contínua
+This repository contains a collection of exercises, small projects, and experiments created during my early web development studies.  
+It includes examples and practice with different tools and technologies, from basic HTML to modern front-end workflows.
 
- Arquivo A  | Versão 1 | Versão 2
- Arquivo B  | Versão 1 | Versão 2
+## 🧩 Topics covered
+- **HTML & CSS basics**
+- **Responsive design**
+- **JavaScript & AJAX**
+- **SASS & Bootstrap**
+- **React (intro level)**
+- **Gulp & Webpack setup**
+- **APIs and JSON practice**
+- **ProntoCloud integration tests**
 
- ## Instalação do Git
-https://git-scm.com/
-
-- Windows: https://git-scm.com/download/win
-- Linux (apt-get): sudo apt-get install git
-- Mac (brew): brew install git
-
- ## Criar conta no GitHub
-
- ## Clonar o projeto
- git clone https://github.com/cavalcantemmarcelo/curso-frontend.git
-
- ## Commits
- Informação de alteração
- - após testado todo seu código
- > git add *
- > git commit -m "mensagem"
- > git push (enviar alterações para o repositório GitHub)
- > git pull (puxar / trazer alterações do GitHub para sua máquina)
-## GitFlow
-Fluxo do Git
-
-### Branchs
-são ramificações / versões paralelas
-
-- main / master (vai para produção, quando o projeto é publicado)
-- develop 
-- DOD Definition of Done: critérios de aceite
-- versionamento 1.0.0
-
-> git checkout -b dev (cria uma branch)
-> git checkout master (mudar de branch)
-
-### Merge
-Mescla de branchs
-Você pode precisar resolver conflitos manualmente
-
-> git merge main 
-### Pull Requests
-Mescla de branchs no repositório
-Permite code review
-O respositório resolve os conflitos automaticamente
-
-
-### configura o GitFlow
-> git flow init
-> git flow feature start {nome-da-feature}
+## 🎯 Purpose
+This repository was created as part of my learning journey while completing my *Full Stack Designer* course at EBAC.  
+It shows my first steps exploring different parts of front-end and full-stack development.
